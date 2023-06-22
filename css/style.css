@@ -1,0 +1,470 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero-box {
+  color: white;
+  background: #865DFF;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../media/pexels-thgusstavo-santana-1813272.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/pexels-thgusstavo-santana-1813272.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.nav-bar {
+  width: 100%;
+  margin: auto;
+  height: 15%;
+  padding: 0 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: black;
+}
+
+.nav-bar .logo {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-family: 'Jockey One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  font-family: 'Jockey One', sans-serif;
+  mix-blend-mode: normal;
+  text-shadow: 0px 4px 4px rgba(255, 255, 255, 0.612);
+  font-size: 3rem;
+  line-height: 56px;
+}
+
+.nav-bar .menu {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.nav-bar .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0;
+}
+
+.nav-bar .menu ul li {
+  list-style: none;
+  font-family: 'Jockey One';
+  margin-left: 5rem;
+  color: #949696;
+  font-size: 1.3rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.nav-bar .menu ul li:hover {
+  color: white;
+}
+
+.hero-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 85%;
+  padding: 1rem 7rem 0 7rem;
+  width: 100%;
+  margin: auto;
+  color: white;
+  position: relative;
+}
+
+.hero-content .img {
+  height: auto;
+  width: 60%;
+}
+
+.hero-content img {
+  width: auto;
+  height: 100%;
+}
+
+.hero-content .btn {
+  color: white;
+  border-radius: 1.5rem;
+  background: black;
+  outline: none;
+  padding: 0.5rem 3rem;
+  font-size: 1.8rem;
+  outline: none;
+}
+
+.hero-content .btn:hover {
+  background: #ff735c;
+}
+
+.hero-content .btn:active {
+  background-color: #ff735c;
+  border-color: #ff735c;
+}
+
+.hero-content .content-box {
+  z-index: 2;
+  width: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero-content .content-box .content {
+  width: 100%;
+  text-align: center;
+}
+
+.hero-content .content-box h1 {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.hero-content .content-box p {
+  font-size: 2rem;
+}
+
+.hero-content .block {
+  width: 100%;
+  text-align: center;
+}
+
+.hero-content .text-animation {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: writing 3s steps(30, end);
+          animation: writing 3s steps(30, end);
+  border-right: 2px solid #000;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+}
+
+@-webkit-keyframes writing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}
+
+@keyframes writing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}
+
+.services {
+  height: 100vh;
+  width: 100%;
+  padding: 5rem;
+}
+
+.services h1 {
+  color: black;
+  margin: 0 3rem 5rem 0;
+  font-family: 'Jockey One';
+}
+
+.services .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.services .card {
+  text-align: center;
+  position: relative;
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+.services .card-img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: -webkit-filter 0.3s;
+  transition: -webkit-filter 0.3s;
+  transition: filter 0.3s;
+  transition: filter 0.3s, -webkit-filter 0.3s;
+}
+
+.services .card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.services .card:hover .card-img {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+}
+
+.services .card:hover .card-overlay {
+  opacity: 1;
+}
+
+.about-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Jockey One', sans-serif;
+  background-color: #7e433a;
+  padding: 5rem;
+  height: 80vh;
+  color: white;
+}
+
+.about-heading {
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.image-section {
+  height: 100%;
+  border-radius: 3rem;
+  width: 40%;
+  background-image: url(../media/pexels-thgusstavo-santana-2061820.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.text-section {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 20px;
+}
+
+.text-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.text-section p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.contact {
+  background-color: #e5e5e5ab;
+  height: auto;
+  width: 100%;
+  padding: 5rem;
+}
+
+.contact .contact-section {
+  background-color: #14213D;
+  color: #E5E5E5;
+  padding: 3rem;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 800px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact .contact-section h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.contact .contact-section p.info {
+  font-family: 'Jockey One', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.contact .contact-section p.info a {
+  color: #FCA311;
+  text-decoration: none;
+}
+
+.contact .social-icons {
+  margin-top: 20px;
+}
+
+.contact .social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.contact .social-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+.footer {
+  background-color: #000000;
+  color: #E5E5E5;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer nav ul li {
+  margin-right: 15px;
+}
+
+.footer nav ul li a {
+  color: #E5E5E5;
+  text-decoration: none;
+}
+
+.footer .social-icons {
+  margin-top: 10px;
+}
+
+.footer .social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer .social-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+.social-icons img {
+  margin: 3rem 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-bar {
+    width: 100%;
+    margin: auto;
+    height: 10%;
+    padding: 0 3rem;
+  }
+  .nav-bar .logo {
+    font-size: 2rem;
+    line-height: 30px;
+  }
+  .hero-content .content h1 {
+    font-size: 2rem;
+  }
+  .hero-content .content p {
+    font-size: 1.5rem;
+  }
+  .hero-content .content button {
+    font-size: 1rem;
+    padding: 10px 60px;
+  }
+  .services {
+    padding: 2rem;
+    height: auto;
+  }
+  .services .container {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .services .card {
+    position: relative;
+    width: 300px;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  .services .card-img {
+    display: none;
+  }
+  .services .card-overlay {
+    position: unset;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    color: #fff;
+    background-color: rgba(70, 102, 206, 0.5);
+    opacity: 1;
+  }
+  .services .card-overlay .card-title h3 {
+    font-size: 20px;
+    margin: 0;
+    padding: 5px;
+  }
+  .services .card-overlay .card-title p {
+    font-size: 15px;
+    padding: 5px;
+    margin: 0;
+  }
+  .services .card:hover .card-img {
+    -webkit-filter: brightness(50%);
+            filter: brightness(50%);
+  }
+  .services .card:hover .card-overlay {
+    opacity: 1;
+  }
+  .menu {
+    display: none;
+  }
+  .my-5 {
+    padding: 5px;
+    margin: 10px;
+  }
+  .image-section {
+    display: none;
+  }
+  .contact-section h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
